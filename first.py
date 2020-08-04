@@ -11,7 +11,7 @@ def say_hello(message):
 
 @bot.message_handler(commands=["start"])
 def start_bot(message):
-    msg = "Курс валют = /valute \nПогода - /weather"
+    msg = "Курс валют = /valute \nПогода - /weather "
     bot.send_message(message.chat.id, msg)
 
 @bot.message_handler(regexp='Стикер')
